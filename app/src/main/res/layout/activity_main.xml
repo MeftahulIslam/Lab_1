@@ -21,14 +21,25 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="69dp"
         android:layout_marginEnd="16dp"
-        android:text="Click Me!"
+        android:onClick="btn1Click"
+        android:text="Click Me First"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        android:onClick="btn1Click"/>
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="116dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:text="Click me second"
+        android:onClick="btn2Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
